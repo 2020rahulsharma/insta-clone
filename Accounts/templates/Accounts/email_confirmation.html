@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Jistagram</title>
+  <script src="https://kit.fontawesome.com/ca6a0dd669.js"></script>
+  <link rel="stylesheet" href=" {% static 'css/style.css' %}">
+
+</head>
+
+<body>
+
+  <div class="login-header">
+    <img src="{% static 'images/logo.PNG' %}" alt="">
+  </div>
+  <div style='width: 80%; margin: auto; text-align: center;margin-top: 50px;' class="email-confirmation">
+    <h1>Check Your Email</h1>
+    <p style='margin: 20px 0;'>We've sent a message to {{email}} with a link to activate your account.</p>
+    <a style='color:blue;' href="{% url 'signup' %}">Back to signup</a>
+  </div>
+
+</body>
+
+</html>
